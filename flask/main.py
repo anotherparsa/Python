@@ -9,3 +9,7 @@ def home_page():
 @app.route("/about")
 def aboutus_page():
     return render_template("aboutus.html")
+
+@app.route("/data")
+def passingdata_page():
+    return render_template("data.html", name="Test")
